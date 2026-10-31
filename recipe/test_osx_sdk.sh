@@ -25,6 +25,7 @@ for test in "${tests[@]}"; do
   # ensure we actually downloaded the right version
   test -d "$OSX_SDK_DIR/MacOSX${version}.sdk"
   test -f "$OSX_SDK_DIR/MacOSX${version}.sdk/SDKSettings.plist"
+  bash test_osx_sdk_metal.sh "$OSX_SDK_DIR/MacOSX${version}.sdk" "${version}"
   # To test locally:
   # bash "recipe/download_osx_sdk.sh"
   rm -rf $OSX_SDK_DIR

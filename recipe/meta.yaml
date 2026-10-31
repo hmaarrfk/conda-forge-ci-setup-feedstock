@@ -108,6 +108,7 @@ requirements:
 test:
   files:
     - test_osx_sdk.sh  # [(osx or linux64) and py==313]
+    - test_osx_sdk_metal.sh  # [(osx or linux64) and py==313]
     - test_osx_sdk_config.sh                   # [unix]
     - .ci_support/test_osx_sdk_stdlib.yaml     # [unix]
     - .ci_support/test_osx_sdk_pinned.yaml     # [unix]
